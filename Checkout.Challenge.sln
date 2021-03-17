@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Checkout.Challenge.Api", "src\Checkout.Challenge.Api\Checkout.Challenge.Api.csproj", "{B51EEB1D-8394-4804-A036-E935C030539D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Checkout.Challenge.Api.Tests", "tests\Checkout.Challenge.Api.Tests\Checkout.Challenge.Api.Tests.csproj", "{76765CB3-C012-495B-A1B0-FB38EC8B3883}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Checkout.Challenge.Services", "src\Checkout.Challenge.Services\Checkout.Challenge.Services.csproj", "{E8C7192F-4712-4D85-A3A6-FAFF523A70E4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Checkout.Challenge.Repository", "src\Checkout.Challenge.Repository\Checkout.Challenge.Repository.csproj", "{8E6EAC3B-4994-4B4A-8650-BB35CBF5DDA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Challenge.Services.Tests", "tests\Checkout.Challenge.Services.Tests\Checkout.Challenge.Services.Tests.csproj", "{03FF54E8-1EE3-433E-ADC1-5D200B2E06C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Challenge.BankClient", "src\Checkout.Challenge.BankClient\Checkout.Challenge.BankClient.csproj", "{B6D56D7B-40AA-45D8-AEDA-C727599796D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Challenge.Bank.Api", "src\Checkout.Challenge.Bank.Api\Checkout.Challenge.Bank.Api.csproj", "{652D3210-94C6-4EE5-BF55-4CD0725B2D80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Challenge.ApiClient", "src\Checkout.Challenge.ApiClient\Checkout.Challenge.ApiClient.csproj", "{97F02765-DFDB-458C-9FB2-089264A0A636}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Challenge.ApiClient.Tests", "tests\Checkout.Challenge.ApiClient.Tests\Checkout.Challenge.ApiClient.Tests.csproj", "{4703E002-C597-486E-B145-70A72DB03470}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Checkout.Challenge.BankClient.Tests", "tests\Checkout.Challenge.BankClient.Tests\Checkout.Challenge.BankClient.Tests.csproj", "{555BE89C-8091-4747-B5F8-5B2672E62817}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B51EEB1D-8394-4804-A036-E935C030539D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B51EEB1D-8394-4804-A036-E935C030539D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B51EEB1D-8394-4804-A036-E935C030539D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B51EEB1D-8394-4804-A036-E935C030539D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76765CB3-C012-495B-A1B0-FB38EC8B3883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76765CB3-C012-495B-A1B0-FB38EC8B3883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76765CB3-C012-495B-A1B0-FB38EC8B3883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76765CB3-C012-495B-A1B0-FB38EC8B3883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8C7192F-4712-4D85-A3A6-FAFF523A70E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8C7192F-4712-4D85-A3A6-FAFF523A70E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8C7192F-4712-4D85-A3A6-FAFF523A70E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8C7192F-4712-4D85-A3A6-FAFF523A70E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E6EAC3B-4994-4B4A-8650-BB35CBF5DDA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E6EAC3B-4994-4B4A-8650-BB35CBF5DDA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E6EAC3B-4994-4B4A-8650-BB35CBF5DDA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E6EAC3B-4994-4B4A-8650-BB35CBF5DDA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03FF54E8-1EE3-433E-ADC1-5D200B2E06C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03FF54E8-1EE3-433E-ADC1-5D200B2E06C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03FF54E8-1EE3-433E-ADC1-5D200B2E06C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03FF54E8-1EE3-433E-ADC1-5D200B2E06C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6D56D7B-40AA-45D8-AEDA-C727599796D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D56D7B-40AA-45D8-AEDA-C727599796D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D56D7B-40AA-45D8-AEDA-C727599796D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D56D7B-40AA-45D8-AEDA-C727599796D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{652D3210-94C6-4EE5-BF55-4CD0725B2D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{652D3210-94C6-4EE5-BF55-4CD0725B2D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{652D3210-94C6-4EE5-BF55-4CD0725B2D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{652D3210-94C6-4EE5-BF55-4CD0725B2D80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97F02765-DFDB-458C-9FB2-089264A0A636}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97F02765-DFDB-458C-9FB2-089264A0A636}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97F02765-DFDB-458C-9FB2-089264A0A636}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97F02765-DFDB-458C-9FB2-089264A0A636}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4703E002-C597-486E-B145-70A72DB03470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4703E002-C597-486E-B145-70A72DB03470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4703E002-C597-486E-B145-70A72DB03470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4703E002-C597-486E-B145-70A72DB03470}.Release|Any CPU.Build.0 = Release|Any CPU
+		{555BE89C-8091-4747-B5F8-5B2672E62817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{555BE89C-8091-4747-B5F8-5B2672E62817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{555BE89C-8091-4747-B5F8-5B2672E62817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{555BE89C-8091-4747-B5F8-5B2672E62817}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C84D660F-74A3-4CDC-8A5E-CAFEF37C4E43}
+	EndGlobalSection
+EndGlobal

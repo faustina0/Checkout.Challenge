@@ -1,0 +1,111 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Checkout.Challenge",
+		"_postman_id": "89a06778-96c6-f71f-48f5-7d101687081c",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post - Bad Request ",
+			"request": {
+				"url": "https://localhost:44345/Payment",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n  \"merchantId\": 121221,\r\n  \"CardNumber\": \"54465465465\",\r\n  \"cardIssuer\": \"VISA\",\r\n  \"expiryDate\": \"01/21\",\r\n  \"cvv\": 45,\r\n  \"amount\": 111,\r\n  \"currency\": \"GBP\",\r\n  \"nameOnTheCard\": \"Mr Smith\",\r\n  \"postCode\": \"SS1 3EE\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST: OK authorized",
+			"request": {
+				"url": "https://localhost:44345/Payment",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"merchantId\": 121221,\r\n  \"CardNumber\": \"4242424242424242\",\r\n  \"cardIssuer\": \"VISA\",\r\n  \"expiryDate\": \"10/21\",\r\n  \"cvv\": 455,\r\n  \"amount\": 111,\r\n  \"currency\": \"GBP\",\r\n  \"nameOnTheCard\": \"Mr Smith\",\r\n  \"postCode\": \"SS1 3EE\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST: OK declined",
+			"request": {
+				"url": "https://localhost:44345/Payment",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"merchantId\": 546545,\r\n  \"CardNumber\": \"5436031030606378\",\r\n  \"cardIssuer\": \"Mastercard\",\r\n  \"expiryDate\": \"10/22\",\r\n  \"cvv\": 991,\r\n  \"amount\": 500,\r\n  \"currency\": \"USD\",\r\n  \"nameOnTheCard\": \"Mr Jhons\",\r\n  \"postCode\": \"EE1 4BB\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET: OK",
+			"request": {
+				"url": "https://localhost:44345/Payment/79ddbd17-4715-4298-8355-e321712119b9",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"merchantId\": 121221,\r\n  \"CardNumber\": \"4242424242424242\",\r\n  \"cardIssuer\": \"VISA\",\r\n  \"expiryDate\": \"10/21\",\r\n  \"cvv\": 455,\r\n  \"amount\": 111,\r\n  \"currency\": \"GBP\",\r\n  \"nameOnTheCard\": \"Mr Smith\",\r\n  \"postCode\": \"SS1 3EE\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET: NotFound",
+			"request": {
+				"url": "https://localhost:44345/Payment/fdgsdfg",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"merchantId\": 121221,\r\n  \"CardNumber\": \"4242424242424242\",\r\n  \"cardIssuer\": \"VISA\",\r\n  \"expiryDate\": \"10/21\",\r\n  \"cvv\": 455,\r\n  \"amount\": 111,\r\n  \"currency\": \"GBP\",\r\n  \"nameOnTheCard\": \"Mr Smith\",\r\n  \"postCode\": \"SS1 3EE\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
